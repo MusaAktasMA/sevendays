@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    width: 13px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #484444;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #abc3d8;
+    border-radius: 10px;
+    border: 3px solid #484444;
+  }
+
+.navbar{
+    height: 10vh;
+    width: 100%;
+    background-color: #222222;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo{
+    margin-top: 15px;
+    font-size: xx-large;
+    font-family: 'Borel', cursive;
+}
+.logo:hover{
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    font-size: medium;
+    color: whitesmoke;
+    transition: 0.8s;
+}
+
+.light{
+    font-size: 40px;
+    position: absolute;
+    padding-right: 1450px;
+    padding-bottom: 1px;
+}
+
+.days{
+    transition: 0.8s;
+    position: relative;
+    
+}
+
+.github-icon{
+    height: 40px;
+}
+
+a:hover{
+    color: #4e92d2;
+}
+
+.active{
+    color: #4e92d2;
+
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.social{
+    font-size: 85px;
+}
+
+
+.social img{
+    margin-top: 40px;
+    margin: 50px;
+    width: 75px;
+    height: 75px;
+    
+}
+
+.content .menu{
+    color: rgb(246, 238, 238);
+    font-size: 100px;
+    margin-top: 0px;
+    margin: 25px;
+
+}
+
+body{
+    background: url(photos/background.jpg);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a:active{
+    transform: scale(2);
+}
+
+@keyframes lights {
+    0% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+    30% { 
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    40% { 
+      color: hsl(230, 100%, 95%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    70% {
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    100% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+}
+  
+  
+h2 {
+    padding: 25px;
+    margin: auto;
+    font-size: 3rem;
+    font-weight: 300;
+    animation: lights 4s 100ms linear infinite;
+}
+
+.edit{
+    padding-right: 13px;
+}
+
+.add{
+    position: fixed;
+    top: 50rem;
+    right: 53rem;
+    color: #fff;
+    background: #5cc0c5;
+    border: none;
+    padding: 0.4rem 1.2rem;
+    font-size: 1.5rem;
+    font-family: inherit;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, .6) 6px 6px 9px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add:active{
+    transform: scale(.98);
+}
+
+.note{
+    background: #433f3f;
+    box-shadow: rgba(0, 0, 0, .15) 5px 5px 7px;
+    margin: 30px 20px;
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+    color: #afd8d6;
+}
+
+.note .tools{
+    background-color: #8bb7b9;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+
+.note img{
+    width: 35px;
+    position: absolute;
+    padding: 5px;
+}
+
+.note .tools button{
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.note textarea{
+    outline: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border: none;
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+    resize: none;
+    color: #afd8d6;
+    background: #433f3f;
+}
+
+.main {
+    padding: 20px;
+    
+}
+
+.hidden{
+    display: none;
+}
