@@ -48,12 +48,6 @@ a{
     transition: 0.8s;
 }
 
-.light{
-    font-size: 40px;
-    position: absolute;
-    padding-right: 1450px;
-    padding-bottom: 1px;
-}
 
 .days{
     transition: 0.8s;
@@ -250,4 +244,17 @@ h2 {
 
 .hidden{
     display: none;
+}
+
+@media (max-width: 952px){
+    .logo{
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    nav a{
+        font-size: 13px;
+    }
+    .github-icon{
+        display: none;
+    }
 }
